@@ -55,6 +55,7 @@ a {
 }
 
 img {
+    margin: 20px 0;
     width: fit-content;
     height: fit-content;
     max-width: 400px;
@@ -63,6 +64,7 @@ img {
 }
 
 input {
+    margin: 20px 0;
     width: fit-content;
     height: fit-content;
     min-width: 300px;
@@ -73,9 +75,10 @@ input {
 }
 
 button {
+    margin: 20px 0;
     width: fit-content;
     height: fit-content;
-    max-width: 64px;
+    max-width: 640px;
     padding: 10px 20px;
     border: 1.5px solid var(--color-border);
     outline: none;
