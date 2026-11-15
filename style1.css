@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --color-background: #fff;
+    --color-surface: #f5f5f7;
+    --color-text: #1a1a1a;
+    --color-text-muted: #6b6b73;
+    --color-accent: #3b5b8c;
+    --color-border: #e2e2e7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 720px;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    width: fit-content;
+    height: fit-content;
+    font-weight: 600;
+}
+
+p {
+    width: fit-content;
+    height: fit-content;
+}
+
+ul, ol {
+    width: fit-content;
+    height: fit-content;
+    border-left: 1.5px solid var(--color-border);
+}
+
+a {
+    width: fit-content;
+    height: fit-content;
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+img {
+    width: fit-content;
+    height: fit-content;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+input {
+    width: fit-content;
+    height: fit-content;
+    min-width: 300px;
+    max-width: 64px;
+    padding: 10px 20px;
+    border: 1.5px solid var(--color-border);
+    outline: none;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    max-width: 64px;
+    padding: 10px 20px;
+    border: 1.5px solid var(--color-border);
+    outline: none;
+}
