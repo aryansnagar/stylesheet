@@ -2,11 +2,12 @@
 
 :root {
     --color-background: #fff;
-    --color-surface: #f5f5f7;
     --color-text: #1a1a1a;
-    --color-text-muted: #6b6b73;
+    --color-surface: #ededf3;
     --color-accent: #3b5b8c;
     --color-border: #e2e2e7;
+    --border: 1.5px solid #000;
+    --bottom-space: 0 0 20px 0;
 }
 
 * {
@@ -24,62 +25,123 @@ html {
 
 body {
     margin: 0 auto;
+    padding: 20px 0;
     max-width: 720px;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
     background-color: var(--color-background);
     color: var(--color-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    margin: var(--bottom-space);
     width: fit-content;
     height: fit-content;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
 p {
+    display: block;
+    margin: var(--bottom-space);
     width: fit-content;
     height: fit-content;
+    line-height: 1.6;
 }
 
-ul, ol {
+ul {
+    display: block;
+    margin: var(--bottom-space);
+    padding: 0 0 0 20px;
     width: fit-content;
     height: fit-content;
-    border-left: 1.5px solid var(--color-border);
+    list-style: disc;
+    line-height: 1.6;
+}
+
+ol {
+    display: block;
+    margin: var(--bottom-space);
+    padding: 0 0 0 20px;
+    width: fit-content;
+    height: fit-content;
+    line-height: 1.6;
 }
 
 a {
     width: fit-content;
     height: fit-content;
-    color: #0000ff;
-    text-decoration: underline;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    background: var(--color-surface);
+}
+
+a:hover {
+    background: #0000ff;
+    color: var(--color-background);
+}
+
+label {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 10px 0;
+}
+
+input {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: var(--bottom-space);
+    padding: 10px 20px;
+    min-width: 300px;
+    max-width: 640px;
+    border: var(--border);
+    border-radius: 5px;
+    outline: none;
+    background: var(--color-surface);
+    color: var(--color-text);
+}
+
+button {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+    min-width: 30px;
+    border: var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    background: #454572;
+    color: var(--color-background);
 }
 
 img {
-    margin: 20px 0;
+    display: block;
     width: fit-content;
     height: fit-content;
     max-width: 400px;
     max-height: 400px;
+    margin: var(--bottom-space);
+    border-radius: 5px;
     object-fit: cover;
+    border: var(--border);
 }
 
-input {
-    margin: 20px 0;
-    width: fit-content;
-    height: fit-content;
-    min-width: 300px;
-    max-width: 64px;
+.highlight {
+    display: block;
+    margin: var(--bottom-space);
     padding: 10px 20px;
-    border: 1.5px solid var(--color-border);
-    outline: none;
-}
-
-button {
-    margin: 20px 0;
-    width: fit-content;
-    height: fit-content;
-    max-width: 640px;
-    padding: 10px 20px;
-    border: 1.5px solid var(--color-border);
-    outline: none;
+    line-height: 1.6;
+    border-left: 5px solid var(--color-accent);
+    background: var(--color-surface);
+    border-radius: 5px;
 }
